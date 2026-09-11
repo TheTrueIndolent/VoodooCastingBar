@@ -394,7 +394,11 @@ local function LayoutTicks(arg3)
 	for i = 1, pcts do
 		local pip = AcquireTicks(i)
 		pip.BasePip:SetWidth(9)
-		pip.BasePip:SetHeight(PlayerCastingBarFrame:GetHeight()-4)
+		if VCBsettings.Player.Size.Height < 16 then
+			pip.BasePip:SetHeight(PlayerCastingBarFrame:GetHeight())
+		else
+			pip.BasePip:SetHeight(PlayerCastingBarFrame:GetHeight()-4)
+		end
 		pip:ClearAllPoints()
 		pip:SetPoint("CENTER", PlayerCastingBarFrame, "LEFT", x, 0)
 		pip:Show()

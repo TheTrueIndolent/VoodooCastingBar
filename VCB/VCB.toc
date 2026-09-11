@@ -2,7 +2,7 @@
 ## IconAtlas: Relic-Fel-TraitBG
 ## Title: Voodoo |cFF9ACD32Casting|r Bar
 ## Notes: |cFFF0E68CMake some |cFF9ACD32voodoo|r to the default |cFF9ACD32casting|r bar!|r
-## Version: 2.03.05
+## Version: 2.03.06
 ## Group: VDWS
 ## Dependencies: VDW
 ## DefaultState: enabled
